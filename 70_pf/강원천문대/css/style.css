@@ -1,0 +1,316 @@
+* {
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+}
+body {
+	font-family : "맑은 고딕", sans-serif;
+	color : #333;
+	background-color : #fff;
+}
+a {
+	color : #333;
+	text-decoration : none;
+}
+ul { list-style : none; }
+#wrapper {
+	width : 1200px;
+	margin : 0 auto;
+}
+/* 헤더 영역 */
+header {
+	height : 100px;
+	position : relative;
+}
+.logo {
+	width : 200px;
+	height : 100px;
+	float : left;
+}
+.logo img { margin-top : 30px; }
+.menu {
+	width : 800px;
+	height : 40px;
+	float : right;
+	margin-top : 60px;
+	margin-right : 10px;
+}
+.navi > li {
+	float : left;
+}
+.navi > li > a {
+	display : block;
+	width : 200px;
+	height : 40px;
+	line-height : 40px;
+	text-align : center;
+	background-color : #48487d;
+	color : #fff;
+	font-weight : bold;
+}
+.navi > li > a:hover { background-color : #fabd43; }
+.submenu {
+	position : absolute;
+	z-index : 2;
+	display : none;
+}
+.submenu > li > a {
+	display : block;
+	width : 200px;
+	height : 40px;
+	background-color : #ccc;
+	font-size : 15px;
+	line-height : 40px;
+	text-align : center;
+	font-weight : bold;
+}
+.submenu > li > a:hover { background-color : #fabd43; }
+.menuBG {
+	width : 1200px;
+	height : 120px;
+	position : absolute;
+	top : 100px;
+	left : 0;
+	background-color : #ccc;
+	z-index : 1;
+	display : none;
+}
+/* 이미지 슬라이드 영역 */
+.imgslide {
+	height : 300px;
+	position : relative;
+}
+.imgslide a {
+	display : block;
+	position : absolute;
+}
+.imgtext {
+	width : 500px;
+	height : 50px;
+	line-height : 50px;
+	text-align : center;
+	background-color : rgba(40,40,40,0.5);
+	color : #fff;
+	font-weight : bold;
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	margin-top : -25px;
+	margin-left : -250px;
+}
+/* 콘텐츠 영역 */
+.contents {
+	height : 200px;
+}
+.tabmenu {
+	width : 395px;
+	height : 180px;
+	margin : 10px 0;
+	float : left;
+	position : relative;
+}
+.tabmenu > li {
+	float : left;
+	width : 100px;
+	line-height : 30px;
+}
+.tabmenu > li > a {
+	display : block;
+	text-align : center;
+	background-color : #ccc;
+	border : 1px solid #ddd;
+	border-bottom : none;
+}
+.tabmenu > li:first-child > a {
+	border-right : none;
+}
+.tabmenu > li > a:hover {
+	background-color : #eee;
+}
+.tabmenu > li.active > a {
+	background-color : #fff;
+}
+.tabmenu > li div {
+	position : absolute;
+	left : 0;
+	height : 0;
+	overflow : hidden;
+}
+.tabmenu > li.active div {
+	width : 393px;
+	height : 148px;
+	border : 1px solid #ddd;
+}
+.notice ul {
+	width : 393px;
+	margin : 12px 0;
+}
+.notice li {
+	height : 32px;
+	line-height : 32px;
+	font-size : 14px;
+	margin : 0 10px;
+}
+.notice li:nth-child(2n) {
+	background-color : #ccc;
+}
+.notice li span { float : right; }
+.notice li:hover { font-weight : bold; }
+.gallery li {
+	float : left;
+	margin-top : 15px;
+	margin-left : 5px;
+}
+.gallery img {
+	width : 120px;
+	height : 120px;
+	padding : 10px;
+}
+.gallery li:hover {
+	opacity : 0.5;
+}
+/* 배너 영역 */
+.banner {
+	width : 395px;
+	height : 180px;
+	float : left;
+	margin : 10px 0;
+	position : relative;
+}
+.banner img {
+	width : 395px;
+	height : 180px;
+}
+.bntext {
+	width : 300px;
+	height : 40px;
+	line-height : 40px;
+	text-align : center;
+	background-color : rgba(40,40,40,0.5);
+	color : #fff;
+	position : absolute;
+	top : 70px;
+	left : 47px;
+}
+.banner img:hover {
+	opacity : 0.5;
+}
+.shortcut {
+	width : 400px;
+	height : 180px;
+	float : right;
+	margin : 10px 0;
+	position : relative;
+}
+.shortcut img {
+	width : 400px;
+	height : 180px;
+}
+.sctext {
+	width : 300px;
+	height : 40px;
+	line-height : 40px;
+	text-align : center;
+	background-color : rgba(40,40,40,0.5);
+	color : #fff;
+	position : absolute;
+	top : 70px;
+	left : 50px;
+}
+.shortcut img:hover { opacity : 0.5; }
+/* 푸터 영역 */
+footer {
+	height : 100px;
+	background-color : #30a3f3;
+}
+.btlogo {
+	width : 200px;
+	height : 100px;
+	float : left;
+}
+.btlogo img { margin-top : 30px; }
+.site {
+	width : 600px;
+	height : 100px;
+	float : right;
+}
+.btmenu {
+	width : 600px;
+	height : 50px;
+	text-align : center;
+	font-size : 18px;
+}
+.btmenu li {
+	display : inline-block;
+	line-height : 50px;
+	padding : 0 20px;
+}
+.btmenu li:hover {
+	font-weight : bold;
+}
+.copy {
+	width : 600px;
+	height : 50px;
+	text-align :center;
+	line-height : 50px;
+}
+/* 레이어 팝업 */
+#modal {
+	width : 100%;
+	height : 100%;
+	position : absolute;
+	top : 0;
+	left : 0;
+	background-color : rgba(0,0,0,0.6);
+	z-index : 10;
+	display : none;
+}
+#modal.active {
+	display : block;
+}
+.modal_up {
+	width : 450px;
+	height : 400px;
+	position : fixed;
+	top : 20%;
+	left : 40%;
+	background-color : #fff;
+}
+.uptitle {
+	margin-top : 30px;
+	text-align : center;
+	font-size : 20px;
+	font-weight : bold;
+}
+.upbody {
+	padding : 30px;
+	line-height : 30px;
+	text-align : center;
+}
+.btn {
+	width : 80px;
+	height : 20px;
+	text-align : center;
+	line-height : 20px;
+	font-size : 15px;
+	font-weight : bold;
+	background : #ccc;
+	position : absolute;
+	bottom : 10px;
+	right : 10px;
+	cursor : pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
